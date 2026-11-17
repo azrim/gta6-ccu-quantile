@@ -16,10 +16,10 @@ Given checkpoint telemetry through `01:00 UTC` on release day (hour 1 viewers an
 
 ## Run Locally
 
-Requires Node 22+ (standard library TypeScript only, offline, deterministic):
+Requires Python 3.11+ / 3.13 (standard library only, offline, deterministic):
 
 ```bash
-mkdir -p out && MAKEFUN_INPUT_DIR=input MAKEFUN_OUTPUT_DIR=out node main.ts
+mkdir -p out && MAKEFUN_INPUT_DIR=input MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
 ---
