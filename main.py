@@ -5,6 +5,12 @@
 import json
 import math
 import os
+import sys
+
+_BOT_DIR = os.path.dirname(os.path.abspath(__file__))
+if _BOT_DIR not in sys.path:
+    sys.path.insert(0, _BOT_DIR)
+
 from forecaster import KNOWN_LAUNCH_LOOKUP, forecast_case
 
 INPUT_DIR = os.environ.get("MAKEFUN_INPUT_DIR") or "/input"
